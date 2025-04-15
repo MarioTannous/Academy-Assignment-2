@@ -1,11 +1,18 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { viteMockServe } from 'vite-plugin-mock';
+import tsconfigPaths from 'vite-tsconfig-paths';
+import tailwindcss from '@tailwindcss/vite';
 
-// https://vite.dev/config/
+
 export default defineConfig({
   plugins: [
-    tailwindcss(),
-    react()
+    react(), 
+    tsconfigPaths(), 
+    tailwindcss(), 
+    viteMockServe({
+      mockPath: 'mock', 
+      enable: true, 
+    }),
   ],
-})
+});

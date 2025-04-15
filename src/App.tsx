@@ -1,13 +1,20 @@
-import React from 'react';
-import Navbar from './Components/Navbar';
-import UserManagement from './Components/UserManagement';
+import { Route, Routes, Navigate } from 'react-router-dom';
+import { useStore } from './store/store'; 
+import Login from './pages/Login';
+import Layout from './Components/Templates/Layout';
 
 const App: React.FC = () => {
+  const accessToken = useStore((state) => state.accessToken); 
+  
   return (
-    <div className="w-full min-h-screen">
-      <Navbar />
-      <UserManagement />
-    </div>
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route
+        path="/dashboard"
+        element={accessToken ? <Layout /> : <Navigate to="/login" />}
+      />
+      <Route path="*" element={<Navigate to="/login" />} />
+    </Routes>
   );
 };
 
