@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button } from '../atoms/Button';
+import { Button } from '../Atoms/Button';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 interface PasswordInputProps {
