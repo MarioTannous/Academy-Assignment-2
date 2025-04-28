@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Avatar } from '../atoms/Avatar';
+import { Avatar } from '../Atoms/Avatar';
 import { Button } from '../atoms/Button';
 import { useNavigate } from 'react-router-dom';
 import { ConfirmationModal } from './ConfirmationSetup';
