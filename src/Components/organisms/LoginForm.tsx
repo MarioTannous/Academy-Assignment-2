@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import LoginInput from '../atoms/LoginInput';
-import PasswordInput from '../molecules/PasswordInput';
-import { Button } from '../atoms/Button';
+import LoginInput from '../Atoms/LoginInput';
+import PasswordInput from '../Molecules/PasswordInput';
+import { Button } from '../Atoms/Button';
 import { useAuthStore } from '../../store/useAuthStore';
 import { useNavigate } from 'react-router-dom';
 import { useLogin } from '../../services/authService';
