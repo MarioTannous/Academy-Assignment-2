@@ -5,10 +5,10 @@ import { useMutation } from '@tanstack/react-query';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import axios from 'axios';
-import { Button } from '../components/atoms/Button';
-import { Input } from '../components/atoms/Input';
+import { Button } from '../Components/Atoms/Button';
+import { Input } from '../Components/Atoms/Input';
 import { createUser, User } from '../services/userService';
-import { Navbar } from '../components/organisms/Navbar';
+import { Navbar } from '../Components/organisms/Navbar';
 
 const userSchema = z.object({
   firstName: z.string().min(1, 'First Name is required'),
