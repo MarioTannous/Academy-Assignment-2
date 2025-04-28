@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { UserCard } from '../molecules/UserCard';
+import { UserCard } from '../Molecules/UserCard';
 import { useAuthStore } from '../../store/useAuthStore';
 import { getUsers, User } from '../../services/userService';
 
