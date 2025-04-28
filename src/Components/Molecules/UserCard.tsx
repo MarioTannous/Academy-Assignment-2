@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Avatar } from '../Atoms/Avatar';
-import { Button } from '../atoms/Button';
+import { Button } from '../Atoms/Button';
 import { useNavigate } from 'react-router-dom';
 import { ConfirmationModal } from './ConfirmationSetup';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
