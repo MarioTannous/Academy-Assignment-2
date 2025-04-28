@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { Navbar } from '../components/organisms/Navbar';
-import { Input } from '../components/atoms/Input';
-import { UserGrid } from '../components/organisms/UserGrid';
-import { Button } from '../components/atoms/Button';
+import { Navbar } from '../Components/organisms/Navbar';
+import { Input } from '../Components/Atoms/Input';
+import { UserGrid } from '../Components/organisms/UserGrid';
+import { Button } from '../Components/Atoms/Button';
 
 const UserManagement = () => {
   const [search, setSearch] = useState('');
