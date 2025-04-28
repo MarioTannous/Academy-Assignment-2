@@ -1,4 +1,4 @@
-import { NavButtons } from '../molecules/NavBarButtons';
+import { NavButtons } from '../Molecules/NavBarButtons';
 
 export const Navbar = () => (
   <nav
