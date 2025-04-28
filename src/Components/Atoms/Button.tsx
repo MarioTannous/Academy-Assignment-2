@@ -1,17 +1,21 @@
-import React from 'react';
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+  variant?: 'primary' | 'logout' | 'icon' | 'edit' | 'delete' | 'login' | 'password';
+};
 
-interface ButtonProps {
-  label: string;
-  onClick: () => void;
-  className: string;
-}
-
-const Button: React.FC<ButtonProps> = ({ label, onClick, className }) => {
+export const Button = ({ variant = 'primary', children, className = '', ...props }: ButtonProps) => {
+  const variants = {
+    primary: 'button-primary',
+    logout: 'button-logout',
+    icon: 'button-icon',
+    edit: 'button-edit',
+    delete: 'button-delete',
+    login: 'button-login',
+    password: 'button-password',
+  };
+ 
   return (
-    <button className={className} onClick={onClick}>
-      {label}
+    <button className={`${variants[variant]} ${className}`} {...props}>
+      {children}
     </button>
   );
 };
-
-export default Button;

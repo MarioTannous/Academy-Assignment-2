@@ -1,16 +1,9 @@
-import React from 'react';
-import '../../App.css'; 
-
-interface AvatarProps {
+type AvatarProps = {
   initials: string;
-}
-
-const Avatar: React.FC<AvatarProps> = ({ initials }) => {
-  return (
-    <div className="avatar">
-      {initials}
-    </div>
-  );
 };
 
-export default Avatar;
+export const Avatar = ({ initials }: AvatarProps) => (
+  <div className="avatar">
+    {initials}
+  </div>
+);

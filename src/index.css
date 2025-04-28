@@ -1,2 +1,74 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #3251D0;
+  --color-primary-dark: #263D9C;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark {
+  --color-primary: #263D9C;
+  --bg-color: #1a202c;
+  --text-color: #ffffff;
+}
+
+body {
+  @apply bg-[var(--bg-color)] text-[var(--text-color)];
+}
+
+.card {
+  @apply p-4 rounded shadow-lg w-full flex flex-col items-center bg-[var(--bg-color)] text-[var(--text-color)];
+}
+
+.navbar {
+  @apply p-4 flex justify-between items-center w-full bg-[var(--color-primary)] text-[var(--text-color)];
+}
+
+.input {
+  @apply w-full px-4 py-2 border rounded-md focus:outline-[var(--color-primary)];
+}
+
+.new-user-form {
+  @apply bg-[var(--bg-color)] p-8 rounded shadow-md w-full max-w-md space-y-4;
+}
+
+.button-primary {
+  @apply transition duration-200 ease-in-out bg-white text-[var(--color-primary)] px-4 py-2 rounded hover:bg-gray-300;
+}
+
+.button-logout {
+  @apply transition duration-200 ease-in-out bg-red-600 text-white px-4 py-2 rounded hover:bg-gray-300;
+}
+
+.button-icon {
+  @apply px-2.5 py-2.5 rounded-full hover:bg-gray-300;
+}
+
+.button-edit {
+  @apply transition duration-200 ease-in-out bg-[var(--color-primary)] text-white px-3 py-1 rounded hover:bg-blue-400;
+}
+
+.button-delete {
+  @apply transition duration-200 ease-in-out bg-red-600 text-white px-3 py-1 rounded hover:bg-red-400;
+}
+
+.button-login {
+  @apply transition duration-200 ease-in-out w-25 bg-[var(--color-primary)] hover:bg-blue-400 text-white py-2 rounded-md font-semibold;
+}
+
+.button-password {
+  @apply absolute inset-y-0 right-0 flex items-center px-3 text-gray-500;
+}
+
+.avatar {
+  @apply w-16 h-16 flex items-center justify-center rounded-full bg-[var(--color-primary)] text-2xl text-white font-bold;
+}
+
+.error-message {
+  @apply text-red-600 text-sm text-center border border-red-600 bg-red-100 p-2;
+}
+
+.no-results {
+  @apply text-center text-gray-500;
+} 
