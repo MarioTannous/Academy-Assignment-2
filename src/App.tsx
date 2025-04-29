@@ -5,7 +5,7 @@ import './index.css';
 import Login from './pages/Login';
 import UserManagement from './pages/UserManagement';
 import NotFound from './pages/NotFound';
-import ProtectedRoute from './components/ProtectedRoute';
+import ProtectedRoute from './Components/ProtectedRoute';
 import AddUser from './pages/AddUserView'; 
 import EditUser from './pages/EditUserView'; 
 import { useThemeStore } from './store/useThemeStore';
