@@ -1,4 +1,4 @@
-import { Button } from '../atoms/Button';
+import { Button } from '../Atoms/Button';
 import { useThemeStore } from '../../store/useThemeStore';
 import { useAuthStore } from '../../store/useAuthStore';
 import { useNavigate } from 'react-router-dom';
